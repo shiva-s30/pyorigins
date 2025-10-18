@@ -1,0 +1,40 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pyorigins"
+dynamic = ["version"]
+description = "Template repository for python"
+requires-python = ">=3.10"
+# dependencies = []
+authors = [
+  {name = "Shiva S", email = "shivasrisailam1999@gmail.com"}
+]
+
+[dependency-groups]
+dev = [
+  "pydantic>=2.12.2",
+  "ruff>=0.14.1",
+  "typer>=0.19.2",
+]
+
+[project.urls]
+Repository = "https://github.com/shiva-s30/pyorigins"
+Issues = "https://github.com/shiva-s30/pyorigins/issues"
+
+[project.scripts]
+pyorx = "src.main:app"
+
+[tool.hatch.build.targets.wheel]
+include = ["config/**", "src/**"]
+
+[tool.hatch.version]
+path = "src/__init__.py"
+
+# ruff configuration
+# https://docs.astral.sh/ruff/configuration/#configuring-ruff
+
+[tool.ruff]
+line-length = 88
+indent-width = 2

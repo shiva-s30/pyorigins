@@ -1,0 +1,12 @@
+{
+    "python.analysis.typeCheckingMode": "standard",
+    "python.analysis.autoImportCompletions": true,
+    "editor.tabSize": 2,
+    "editor.tabCompletion": "on",
+    "python.analysis.exclude": [
+        "${workspaceFolder}/tests/**",
+    ],
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true,
+    "editor.rulers": [88],
+}
