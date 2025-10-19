@@ -8,14 +8,11 @@
       "name": "Python Debugger: File with args",
       "type": "debugpy",
       "request": "launch",
-      "program": "${file}",
+      // "program": "${file}",
+      "program": "${workspaceFolder}/src/main.py",
       "console": "integratedTerminal",
       "args": [
-        "-i", 
-        "${workspaceFolder}/tests/file.py",
-        // "/${workspaceFolder}/tests/external",
-        "-o",
-        "mermaid"
+        "run", "-o",
       ],
     }
   ]
